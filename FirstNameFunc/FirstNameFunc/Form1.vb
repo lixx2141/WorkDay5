@@ -9,7 +9,16 @@ Public Class Form1
     End Sub
 
     Function FirstName(ByVal name As String) As String
-        Return "Not Implemented Yet"
+        Dim idx As Integer
+        idx = name.IndexOf(" ")
+
+        Dim fName As String
+        fName = name.Substring(0, idx)
+
+        Return fName
     End Function
 
+    Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
